@@ -151,7 +151,7 @@ const Draw3 = {
         let p3projected = projectPoint(p3Rot);
 
         let normal = getNormalFromVectors(p1, p2, p3);
-        let center = Math3.scale( Math3.add( Math3.add(p1, p2), p3) ), 1/3);
+        let center = Math3.scale(add( add(p1, p2), p3 ), 1/3);
 
         let clockwise = clockwiseCheck([p1projected, p2projected, p3projected]);
         if(clockwise){
