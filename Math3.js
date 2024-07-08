@@ -78,7 +78,7 @@ const Math3 = {
             x : a * Math.cos(angle * deg2rad) + b * Math.sin(angle * deg2rad),
             y : a * -Math.sin(angle * deg2rad) + b * Math.cos(angle * deg2rad)
         };
-    }
+    },
 
 	fullRot(vector, yPlane = 0, xPlane = 0){ // rotates a point by a yPlane and xPlane value ( uses Degrees!!!!)
             return {
