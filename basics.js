@@ -8,8 +8,8 @@ const deg2rad = Math.PI / 180;
 
 // ===== Input =====
     canvasElement.addEventListener('mousemove', function(e){
-        mouse.x = (e.offsetX / canvasElement.clientWidth) * canvasElement.width;
-        mouse.y = (e.offsetY / canvasElement.clientHeight) * canvasElement.height;
+        mouse.real.x = (e.offsetX / canvasElement.clientWidth) * canvasElement.width;
+        mouse.real.y = (e.offsetY / canvasElement.clientHeight) * canvasElement.height;
 
         mouse.movementX = e.movementX;
         mouse.movementY = e.movementY;
