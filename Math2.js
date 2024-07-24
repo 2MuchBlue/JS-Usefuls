@@ -38,6 +38,7 @@ const Math2 = {
     },
     
     normalizeVector(vec){
+	if(vec === new vec2(0, 0)) { return new vec2(0, 0); }
         let dist = Math2.distance(new vec2(0, 0), vec);
         vec.x = vec.x / dist;
         vec.y = vec.y / dist;
@@ -51,7 +52,7 @@ const Math2 = {
         let normalPoint = new vec2(x, y);
     
         let dist = Math2.distance(new vec2(0, 0), normalPoint);
-	if(dist === 0){ return new vec2(0, 0); }
+	
         normalPoint.x = normalPoint.x / dist;
         normalPoint.y = normalPoint.y / dist;
 		
