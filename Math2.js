@@ -38,13 +38,14 @@ const Math2 = {
     },
     
     normalizeVector(vec){
-	if(vec === new vec2(0, 0)) { return new vec2(0, 0); }
+	if(vec.x === 0 && vec.y === 0) { return new vec2(0, 0); }
         let dist = Math2.distance(new vec2(0, 0), vec);
         vec.x = vec.x / dist;
         vec.y = vec.y / dist;
     
         return vec;
     },
+
     
     getNormalFromVec2s(a, b){
         let x = -(a.y - b.y);
